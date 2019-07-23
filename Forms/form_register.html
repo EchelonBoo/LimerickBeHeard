@@ -1,0 +1,12 @@
+<form method="post" action="index.php?pageID=adminRegister">
+<div class="form-group">
+<label for="adminID">Admin ID</label><input required type="text" class="form-control" id="adminID" name="adminID" pattern="[a-zA-Z0-9]{5,10}" title="Admin ID (5 to 10 Characters) - Enter Characters A-Z,a-z and/or numbers 0-9">
+<label for="adminFirstName">First Name</label><input required type="text" class="form-control" id="adminFirstName" name="adminFirstName" pattern="[a-zA-Z0-9óáéí']{1,45}" title="First Name (up to 45 Characters)">
+<label for="adminLastName">Last Name</label><input required type="text" class="form-control" id="adminLastName" name="adminLastName" pattern="[a-zA-Z0-9óáéí']{1,45}" title="Last Name (up to 45 Characters)" >
+<label for="adminEmail">Email</label><input required type="text" class="form-control" id="adminEmail" name="adminEmail" pattern="[a-zA-Z0-9óáé@_\.\- ]{1,45}" title="email (up to 45 Characters)"> 
+<label for="adminMobile">Mobile</label><input required type="text" class="form-control" id="adminMobile" name="adminMobile" pattern="[0-9()- ]{1,45}" title="mobile (up to 45 Characters)">
+<label for="adminPass1">Password</label><input required type="password" class="form-control" id="adminPass1" name="adminPass1" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
+<label for="adminPass2">Re-enter Password</label><input required type="password" class="form-control" id="adminPass2" name="adminPass2" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must match the above password exactly">
+</div>
+<button type="submit" class="btn btn-default" name="btn1" value='register'>Register</button>
+</form>

@@ -1,0 +1,9 @@
+<form method="post" action="index.php?pageID=eventAdd">
+<div class="form-group">
+<label for="EventID">Event ID</label><input required type="text" class="form-control" id="EventID" name="EventID" pattern="[A-Z0-9]{5,10}" title="EventID - Upper Case Letters and digits, 5-10 characters">
+<label for="EventName">Event Name</label><input required type="text" class="form-control" id="EventName" name="EventName" pattern="[a-zA-Z0-9óáéí' ]{1,45}" title="Event Name (up to 45 Characters)">
+<label for="EventDate">Event Date</label><input required type="text" class="form-control" id="EventDate" name="EventDate"  title="Event Date YYYY-MM-DD" >
+<label for="EventDescription">Event Description</label><input required type="text" class="form-control" id="EventDescription" name="EventDescription" title="Enter a brief description of the event:">
+</div>
+<button type="submit" class="btn btn-success" name="btn" value='eventAdd'>Add Event</button>
+</form>
